@@ -1,0 +1,79 @@
+body {
+  font             : "Raleway", sans-serif;
+  color            : rgba(0, 0, 0, 0.5);
+  text-align       : center;
+  text-transform   : uppercase;
+  letter-spacing   : 0.5em;
+  top              : 15%;
+  height           : 100vh;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font          : 600 3.5em "Raleway", sans-serif;
+  color         : rgba(0, 0, 0, 0.5);
+  text-align    : center;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  width         : 100%;
+}
+
+h3 {
+  font          : 900 1em "Raleway", sans-serif;
+  color         : rgba(0, 0, 0, 0.5);
+  text-align    : center;
+  text-transform: none;
+  letter-spacing: 0.01em;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width             : 100%;
+  height            : 25px;
+  background        : #d3d3d3;
+  outline           : none;
+  opacity           : 0.7;
+  -webkit-transition: 0.2s;
+  transition        : opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance        : none;
+  width             : 25px;
+  height            : 25px;
+  background        : #4caf50;
+  cursor            : pointer;
+}
+
+.slider::-moz-range-thumb {
+  width     : 25px;
+  height    : 25px;
+  background: #4caf50;
+  cursor    : pointer;
+}
+.sliderticks {
+  display        : flex;
+  justify-content: space-between;
+  padding        : 0 10px;
+}
+
+.sliderticks p {
+  position       : relative;
+  display        : flex;
+  justify-content: center;
+  text-align     : center;
+  width          : 1px;
+  background     : #d3d3d3;
+  height         : 10px;
+  line-height    : 40px;
+  margin         : 0 0 20;
+}
