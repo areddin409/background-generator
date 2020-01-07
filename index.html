@@ -6,12 +6,37 @@
   </head>
 
   <body id="gradient">
-    <h1>Background Generator!</h1>
+    <h1>Background Generator</h1>
     <div class="colors">
-      <input class="color1" type="color" name="color1" value="#00ff00" />
-      <input class="color2" type="color" name="color2" value="#ff0000" />
+      <div class="color1container">
+        <p class="label">color1</p>
+        <input class="color1" type="color" name="color1" value="#00ff00" />
+        <div class="color1slider">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="25"
+            class="rangeSlider"
+            id="color1Range"
+          />
+        </div>
+      </div>
+      <div class="color2container">
+        <p class="label">color2</p>
+        <input class="color2" type="color" name="color2" value="#ff0000" />
+        <div class="color2slider">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="75"
+            class="rangeSlider"
+            id="color2Range"
+          />
+      </div>
     </div>
-    <button id="random">Random</button>
+    <button id="random">Random Colors</button>
     <div class="slidercontainer">
       <p>Select degree angle:</p>
       <input
@@ -35,8 +60,8 @@
 
     .
 
-    <h2>This is the Background</h2>
+    <h2>Current CSS Background</h2>
     <h3></h3>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bundle.js"></script>
   </body>
 </html>
